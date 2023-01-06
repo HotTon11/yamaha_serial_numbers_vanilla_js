@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamaha Drums Serial Numbers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONT "NUNITO" -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>YAMAHA DRUMS SERIAL NUMBERS</h1>
+    </header>
+    <hr />
+    <br />
+    <div>
+      <p>
+        On every Yamaha Drum logo badge there are 2 sets of number/letter
+        sequences. The model number of the drum is on the LEFT (IE: TT-912Y).
+        The serial number will always be to the RIGHT of the model number.
+      </p>
+      <br />
+      <p>NOTE: This will date drums from 1980 on only.</p>
+      <br />
+
+      <p>
+        <span class="yearspan">1980-1989:</span> <br />
+        Drums are coded with two-letter prefix on the serial numbers. The first
+        letter in the serial number indicates the year of manufacture; the
+        second letter is the month.
+      </p>
+      <br />
+      <p>
+        <span class="yearspan">1990-Present:</span> <br />
+        Drums are coded with three-letter prefix on the serial numbers. The
+        first two letters indicate year, the third letter indicates the month.
+      </p>
+
+      <br />
+    </div>
+
+    <div class="inputsection">
+      <div class="form-button">
+        <form action="">
+          <label for="">
+            <h4>
+              Enter the 2 or 3 letters from the serial number to determine the
+              production date:
+            </h4>
+          </label>
+          <br />
+          <input
+            id="userserialentry"
+            class="input"
+            name=""
+            placeholder=""
+            value=""
+            maxlength="3"
+          />
+        </form>
+        <br />
+        <!-- The onclick in the button tag is a function that executes when you hit submit -->
+        <button onclick="returnText()" id="btn" class="submit-button">
+          Submit
+        </button>
+      </div>
+
+      <div>
+        <h4>
+          This drum was built in: <br />
+          <br />
+          <span id="monthmade"></span>
+          <span id="yearmade"></span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <p>
+        <span>
+          Disclaimer: This website is intended to speed up the process of
+          determining the production date using the
+          <a href="https://faq.yamaha.com/usa/s/article/U0004177">
+            information provided by Yamaha.</a
+          >
+          This application runs strictly in the browser and stores no data.
+          Results rendered herein are provided on an "as is" basis with no
+          guarantees of completeness, accuracy, usefulness or timeliness. Author
+          has no ties to Yamaha and assumes no responsibility or liability for
+          any errors or omissions in the content of this site.
+        </span>
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
